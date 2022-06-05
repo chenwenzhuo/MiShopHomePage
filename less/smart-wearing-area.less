@@ -1,0 +1,159 @@
+.smart-wearing-area {
+    width: 1226px;
+    margin-top: 40px;
+
+    .sw-top-bar {
+        width: 1226px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .sw-title {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .sw-links {
+            a span {
+                font-size: 15px;
+                color: #000000;
+            }
+
+            a:first-child span {
+                color: #ee702e;
+                border-bottom: 2px solid #ee702e;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .smart-wearing-list {
+        width: 1226px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .head-item {
+            width: 234px;
+            height: 614px;
+            background-color: #ffffff;
+            transition: transform .2s linear;
+
+            a img {
+                width: 234px;
+                height: 614px;
+            }
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 0 10px #d9d9d9;
+                transition: transform .2s linear;
+            }
+        }
+
+        .sw-items {
+            width: 975px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+
+            li {
+                width: 234px;
+                height: 300px;
+                background-color: #ffffff;
+                transition: transform .2s linear;
+
+                a {
+                    width: 234px;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 160px;
+                        height: 160px;
+                    }
+
+                    .sw-model {
+                        max-width: 210px;
+                        font-size: 15px;
+                        color: #000000;
+                        margin-top: 15px;
+                        white-space: nowrap; //禁止文本换行
+                        overflow: hidden; //隐藏溢出部分
+                        text-overflow: ellipsis; //文本显示不全时显示省略号
+                    }
+
+                    .sw-desc {
+                        max-width: 210px;
+                        font-size: 12px;
+                        color: #b0b0b0;
+                        margin-top: 8px;
+                        white-space: nowrap; //禁止文本换行
+                        overflow: hidden; //隐藏溢出部分
+                        text-overflow: ellipsis; //文本显示不全时显示省略号
+                    }
+
+                    .sw-price {
+                        margin-top: 12px;
+
+                        .sw-price-new {
+                            font-size: 15px;
+                            color: #ee702e;
+                        }
+
+                        .sw-price-old {
+                            font-size: 14px;
+                            color: #b0b0b0;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 0 10px #d9d9d9;
+                    transition: transform .2s linear;
+                }
+            }
+
+            li:not(:nth-child(4n+1)) {
+                margin-left: 13px;
+            }
+
+            // 最后一个元素，浏览更多
+            li:last-child {
+                height: 143px;
+                display: flex;
+                align-items: center;
+
+                a {
+                    height: 80px;
+                    flex-direction: row;
+
+                    &>div {
+                        margin-right: 40px;
+
+                        div:first-child {
+                            font-size: 20px;
+                            color: #000000;
+                        }
+
+                        div:last-child {
+                            font-size: 14px;
+                            color: #000000;
+                            margin-top: 8px;
+                        }
+                    }
+
+                    &>span {
+                        font-size: 48px;
+                        color: #ee702e;
+                    }
+                }
+            }
+        }
+    }
+}

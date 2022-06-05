@@ -1,0 +1,84 @@
+.sub-banner {
+    width: 1226px;
+    height: 170px;
+    margin-top: 20px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+
+    .shortcuts {
+        width: 234px;
+        height: 170px;
+        background-color: #5e5751;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            width: 76px;
+            height: 84px;
+            margin: 0;
+            position: relative;
+
+            a {
+                display: block;
+                width: 76px;
+                height: 84px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                span:first-child {
+                    font-size: 25px;
+                }
+
+                span:last-child {
+                    font-size: 12px;
+                    margin-top: 10px;
+                }
+            }
+
+            a:hover {
+                color: #ffffff;
+            }
+
+            // 通过伪元素添加分隔线
+            &::before {
+                content: "";
+                display: block;
+                width: 64px;
+                height: 1px;
+                background-color: #655e58;
+                position: absolute;
+                left: 7px;
+                top: 2px;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 64px;
+                background-color: #655e58;
+                position: absolute;
+                left: 1px;
+                top: 12px;
+            }
+        }
+    }
+
+    .ads {
+        font-size: 0;
+        display: flex;
+
+        li a img {
+            width: 316px;
+        }
+
+        li:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

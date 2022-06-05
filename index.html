@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=1226"> -->
+    <meta name="keywords" content="Xiaomi,redmi,Xiaomi11 Ultra,Redmi Note 9,Xiaomi MIX Alpha,小米商城">
+    <meta name="description"
+        content="小米官网直营小米公司旗下所有产品，包括Xiaomi手机系列Xiaomi 11 Ultra、MIX FOLD，Redmi 红米系列Redmi Note 9、Redmi K40 Pro，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持.">
+    <title>小米商城 - Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站</title>
+    <!-- 网页图标 -->
+    <link rel="icon" href="./ico/MiLogo.ico" type="image/x-icon">
+
+    <!-- 重置默认样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
+    <!-- 首页样式 -->
+    <link rel="stylesheet" href="./less/index.css">
+    <!-- iconfont图标库 -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+
+<body>
+    <!-- 顶部栏 -->
+    <div class="top-bar-wrapper">
+        <div class="top-bar">
+            <!-- 左侧导航链接 -->
+            <ul class="left-navs">
+                <li><a href="#">小米商城</a></li>
+                <li>|</li>
+                <li><a href="#">MIUI</a></li>
+                <li>|</li>
+                <li><a href="#">IoT</a></li>
+                <li>|</li>
+                <li><a href="#">云服务</a></li>
+                <li>|</li>
+                <li><a href="#">天星数科</a></li>
+                <li>|</li>
+                <li><a href="#">有品</a></li>
+                <li>|</li>
+                <li><a href="#">小爱开发平台</a></li>
+                <li>|</li>
+                <li><a href="#">企业团购</a></li>
+                <li>|</li>
+                <li><a href="#">资质证照</a></li>
+                <li>|</li>
+                <li><a href="#">协议规则</a></li>
+                <li>|</li>
+                <li>
+                    <a href="#">
+                        <span class="dlAppDesc">下载app</span>
+                        <div class="triangle"></div>
+                        <div class="qrCodeWin">
+                            <img src="./img/downloadApp.png">
+                            <span>小米商城APP</span>
+                        </div>
+                    </a>
+                </li>
+                <li>|</li>
+                <li><a href="#">Select&nbsp;Location</a></li>
+            </ul>
+            <!-- 右侧功能区 未登录 -->
+            <div class="right-funcs-notLogIn">
+                <ul class="funcs-list-notLogIn">
+                    <li><a href="#">登录</a></li>
+                    <li>|</li>
+                    <li><a href="#">注册</a></li>
+                    <li>|</li>
+                    <li><a href="#">消息通知</a></li>
+                </ul>
+                <div class="shopping-cart-empty">
+                    <a href="#">
+                        <span class="cart-icon iconfont icon-cart-empty"></span>
+                        <span class="cart-name">购物车（0）</span>
+                    </a>
+                    <div class="cart-content-empty">购物车中还没有商品，赶紧选购吧！</div>
+                </div>
+            </div>
+            <!-- 右侧功能区 已登录 -->
+            <div class="right-funcs-logIn">
+                <ul class="funcs-list-logIn">
+                    <li>
+                        <ul class="user-options">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">评价晒单</a></li>
+                            <li><a href="#">我的喜欢</a></li>
+                            <li><a href="#">小米账户</a></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                        <!-- 为了方便在user-options被hover时设置用户名区域的样式，需要将用户名写在user-options后面，这样才能通过兄弟选择器选中用户名区域 -->
+                        <a href="#">
+                            <span class="logged-user-name">哈哈哈</span>
+                            <span class="iconfont icon-arrow-down"></span>
+                        </a>
+                    </li>
+                    <li>|</li>
+                    <li><a href="#">消息通知</a></li>
+                    <li>|</li>
+                    <li><a href="#">我的订单</a></li>
+                </ul>
+                <div class="shopping-cart-full">
+                    <a href="#">
+                        <span class="cart-icon iconfont icon-cart-full"></span>
+                        <span class="cart-name">购物车（9）</span>
+                    </a>
+                    <div class="cart-content-full">
+                        <ul class="full-cart-list">
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-BlackShark5Pro.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">黑鲨5&nbsp;Pro</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">12GB+256GB&nbsp;陨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">4299元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-MiPad5.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">小米平板5</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">6GB+128GB&nbsp;绿</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">1799元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-RedMiK50.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">Redmi&nbsp;K50</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">8GB+128GB&nbsp;墨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">2199元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-BlackShark5Pro.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">黑鲨5&nbsp;Pro</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">12GB+256GB&nbsp;陨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">4299元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-MiPad5.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">小米平板5</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">6GB+128GB&nbsp;绿</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">1799元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-RedMiK50.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">Redmi&nbsp;K50</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">8GB+128GB&nbsp;墨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">2199元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-BlackShark5Pro.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">黑鲨5&nbsp;Pro</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">12GB+256GB&nbsp;陨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">4299元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-MiPad5.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">小米平板5</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">6GB+128GB&nbsp;绿</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">1799元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="full-cart-goods">
+                                    <img src="./img/fullCart-RedMiK50.png">
+                                    <div class="cart-goods-desc">
+                                        <div class="cart-goods-title">Redmi&nbsp;K50</div>
+                                        <!-- 型号 -->
+                                        <div class="cart-goods-model">8GB+128GB&nbsp;墨</div>
+                                    </div>
+                                </a>
+                                <div class="goods-detail">
+                                    <span class="price-count">2199元&nbsp;×&nbsp;1</span>
+                                    <a href="#" class="del-goods-icon">
+                                        <span class="iconfont icon-cross"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="full-cart-summary">
+                            <div class="cart-summary">
+                                <div class="total-count">共9件商品</div>
+                                <div class="total-price">XXXXX.XX元</div>
+                            </div>
+                            <div class="calc-bill">
+                                <a href="#">去购物车结算</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav-bar-wrapper">
+        <div class="nav-bar">
+            <div class="mi-logo">
+                <a href="#">
+                    <img src="./img/MiLogo.png">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Xiaomi手机</a></li>
+                <li><a href="#">Redmi&nbsp;红米</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">平板</a></li>
+                <li><a href="#">家电</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="search-input">
+                <a href="#">
+                    <span class="search-icon iconfont icon-sousuo"></span>
+                </a>
+            </div>
+        </div>
+        <div class="goods-example-wrapper">
+            <ul class="goods-example">
+                <li>
+                    <a href="#">
+                        <img src="./img/XiaomiCivi1S.png">
+                        <span class="goods-desc">Xiaomi&nbsp;Civi&nbsp;1S</span>
+                        <span class="goods-price">2299元起</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <img src="./img/Xiaomi12Pro.png">
+                        <span class="goods-desc">Xiaomi&nbsp;12&nbsp;Pro</span>
+                        <span class="goods-price">4699元起</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <img src="./img/Xiaomi12.png">
+                        <span class="goods-desc">Xiaomi&nbsp;12</span>
+                        <span class="goods-price">3699元起</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <img src="./img/Xiaomi12X.png">
+                        <span class="goods-desc">Xiaomi&nbsp;12X</span>
+                        <span class="goods-price">2999元起</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <img src="./img/Xiaomi12X.png">
+                        <span class="goods-desc">Xiaomi&nbsp;12X</span>
+                        <span class="goods-price">2999元起</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <img src="./img/Xiaomi12X.png">
+                        <span class="goods-desc">Xiaomi&nbsp;12X</span>
+                        <span class="goods-price">2999元起</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner区 -->
+    <div class="banner-wrapper">
+        <div class="banner">
+            <div class="main-banner">
+                <!-- 左侧导航链接 -->
+                <div class="m-banner-nav-wrapper">
+                    <ul class="m-banner-nav">
+                        <li>
+                            <a href="#">
+                                <span>手机</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>电视</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>笔记本&nbsp;平板</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>家电</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>出行&nbsp;穿戴</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>智能&nbsp;路由器</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>电源&nbsp;配件</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>健康&nbsp;儿童</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>耳机&nbsp;音箱</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>生活&nbsp;箱包</span>
+                                <span class="iconfont icon-arrow-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 导航链接列表项在hover时出现的商品列表 -->
+                    <ul class="m-banner-nav-goodslist">
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/mainBannerGoodslist-RedmiNote11TPro+.png">
+                                <span>Note&nbsp;11T&nbsp;Pro+</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右侧推荐大图 -->
+                <div class="recomd-goods">
+                    <div class="recomd-gs-img">
+                        <a href="#">
+                            <img src="./img/mainBanner-RedmiNote11T.jpg">
+                        </a>
+                    </div>
+                    <div class="img-switcher">
+                        <a href="#"><span class="switch-left"></span></a>
+                        <a href="#"><span class="switch-right"></span></a>
+                    </div>
+                    <div class="dots-switcher">
+                        <a href="#"><span></span></a>
+                        <a href="#"><span></span></a>
+                        <a href="#"><span></span></a>
+                        <a href="#"><span></span></a>
+                        <a href="#"><span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-banner">
+                <ul class="shortcuts">
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-clockCircle"></span>
+                            <span>保障服务</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-building"></span>
+                            <span>企业团购</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-F"></span>
+                            <span>F码通道</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-simCard"></span>
+                            <span>米粉卡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-exchangecny"></span>
+                            <span>以旧换新</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont icon-huafeichongzhi"></span>
+                            <span>话费充值</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ads">
+                    <li><a href="#"><img src="./img/subBanner-RedmiNote11TPro+.jpg"></a></li>
+                    <li><a href="#"><img src="./img/subBanner-RedmiNote11TPro.jpg"></a></li>
+                    <li><a href="#"><img src="./img/subBanner-WatchS1.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 最新产品栏位 -->
+    <div class="newest-prod-wrapper">
+        <div class="newest-prod">
+            <a href="#"><img src="./img/newestProd-RedmiNote11TPro.jpeg" alt=""></a>
+        </div>
+    </div>
+    <!-- 商品分类展示区域 -->
+    <div class="classified-goods-wrapper">
+        <div class="classified-goods">
+            <div class="cell-phone-area">
+                <div class="cp-top-bar">
+                    <div class="cp-title">手机</div>
+                    <div class="cp-more">
+                        <a href="#">
+                            <span>查看更多</span>
+                            <span class="iconfont icon-arrow-right1"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="cell-phone-list">
+                    <div class="head-item">
+                        <a href="#"><img src="./img/classified-goods/cellphone/RedmiK50.png"></a>
+                    </div>
+                    <ul class="cp-items">
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiNote11TPro+.png">
+                                <span class="cp-model">Redmi&nbsp;Note&nbsp;11T&nbsp;Pro+</span>
+                                <span class="cp-desc">天玑8100&nbsp;|&nbsp;真旗舰芯</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">1999元起</span>
+                                    <span class="cp-price-old">2099元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiNote11TPro.png">
+                                <span class="cp-model">Redmi&nbsp;Note&nbsp;11T&nbsp;Pro</span>
+                                <span class="cp-desc">天玑8100&nbsp;|&nbsp;真旗舰芯</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">1699元起</span>
+                                    <span class="cp-price-old">1799元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiNote11SE.png">
+                                <span class="cp-model">Redmi&nbsp;Note&nbsp;11&nbsp;SE</span>
+                                <span class="cp-desc">双卡双5G&nbsp;|&nbsp;疾速登陆</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">999元起</span>
+                                    <span class="cp-price-old">1099元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/XiaomiCivi1S.png">
+                                <span class="cp-model">Xiaomi&nbsp;Civi&nbsp;1S</span>
+                                <span
+                                    class="cp-desc">原生美肌人像&nbsp;|&nbsp;奇迹阳光动人新色&nbsp;|&nbsp;骁龙&nbsp;778G&nbsp;Plus</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">2299元起</span>
+                                    <span class="cp-price-old"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/Redmi10A.jpg">
+                                <span class="cp-model">Redmi&nbsp;10A</span>
+                                <span class="cp-desc">大电量、大音量、大屏幕</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">649元起</span>
+                                    <span class="cp-price-old">699元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiK50Pro.jpg">
+                                <span class="cp-model">Redmi&nbsp;K50&nbsp;Pro</span>
+                                <span class="cp-desc">2K直屏的狠旗舰</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">2699元起</span>
+                                    <span class="cp-price-old">2999元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiK50.jpg">
+                                <span class="cp-model">Redmi&nbsp;K50</span>
+                                <span class="cp-desc">2K直屏的狠旗舰</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">2199元起</span>
+                                    <span class="cp-price-old">2399元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/cellphone/RedmiK40S.jpg">
+                                <span class="cp-model">Redmi&nbsp;K40S</span>
+                                <span class="cp-desc">口碑真旗舰</span>
+                                <span class="cp-price">
+                                    <span class="cp-price-new">1799元起</span>
+                                    <span class="cp-price-old"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="smart-wearing-area">
+                <div class="sw-top-bar">
+                    <div class="sw-title">智能穿戴</div>
+                    <div class="sw-links">
+                        <a href="#"><span>热门</span></a>
+                        <a href="#"><span>穿戴</span></a>
+                    </div>
+                </div>
+                <div class="smart-wearing-list">
+                    <div class="head-item">
+                        <a href="#"><img src="./img/classified-goods/smart-wearing/XiaomiWatchColor2.jpg"></a>
+                    </div>
+                    <ul class="sw-items">
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiWatchS1.jpg">
+                                <span class="sw-model">Xiaomi&nbsp;Watch&nbsp;S1</span>
+                                <span class="sw-desc">蓝宝石玻璃镜面&nbsp;|&nbsp;不锈钢中框&nbsp;|&nbsp;1.43”AMOLED大屏幕</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">1049元起</span>
+                                    <span class="sw-price-old">1099元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiWirelessHeadphone3.jpg">
+                                <span class="sw-model">Xiaomi真无线降噪耳机3</span>
+                                <span class="sw-desc">40dB宽频主动降噪&nbsp;|&nbsp;HiFi高保真音质&nbsp;|&nbsp;HRTF专业调音</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">369元</span>
+                                    <span class="sw-price-old">499元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/RedmiWatch2.jpg">
+                                <span class="sw-model">Redmi&nbsp;手表&nbsp;2</span>
+                                <span class="sw-desc">1.6”AMOLED大屏&nbsp;|&nbsp;117种运动模式&nbsp;|&nbsp;24小时心率监测</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">379元</span>
+                                    <span class="sw-price-old">399元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiBand6NFC.jpg">
+                                <span class="sw-model">小米手环6&nbsp;NFC版</span>
+                                <span class="sw-desc">1.56”跑道全面彩屏&nbsp;|&nbsp;30种运动模式&nbsp;|&nbsp;24小时心率监测</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">239元</span>
+                                    <span class="sw-price-old">279元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiWirelessHeadphone3Pro.jpg">
+                                <span class="sw-model">Xiaomi&nbsp;真无线降噪耳机&nbsp;3&nbsp;Pro</span>
+                                <span class="sw-desc">40dB自适应降噪&nbsp;|&nbsp;空间音频&nbsp;|&nbsp;HiFi高保真音质</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">649元</span>
+                                    <span class="sw-price-old">699元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/RedmiBuds3.jpg">
+                                <span class="sw-model">Redmi&nbsp;Buds&nbsp;3半入耳真无线蓝牙耳机</span>
+                                <span class="sw-desc">轻巧半入耳&nbsp;|&nbsp;通话降噪&nbsp;|&nbsp;20小时长续航</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">179元</span>
+                                    <span class="sw-price-old">199元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/RedmiBuds3Youth.jpg">
+                                <span class="sw-model">Redmi&nbsp;Buds&nbsp;3青春版</span>
+                                <span class="sw-desc">轻巧真无线&nbsp;|&nbsp;猫耳状稳固设计&nbsp;|&nbsp;18小时长续航</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">99元</span>
+                                    <span class="sw-price-old"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiBand6.jpg">
+                                <span class="sw-model">小米手环6</span>
+                                <span class="sw-desc">1.56”跑道全面彩屏&nbsp;|&nbsp;30种运动模式&nbsp;|&nbsp;24小时心率监测</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">199元</span>
+                                    <span class="sw-price-old">229元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiBand5NFC.jpg">
+                                <span class="sw-model">小米手环5&nbsp;NFC版</span>
+                                <span class="sw-desc">多功能彩显大屏&nbsp;|&nbsp;磁吸式充电&nbsp;|&nbsp;14天超长续航</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">189元</span>
+                                    <span class="sw-price-old">229元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/classified-goods/smart-wearing/XiaomiWirelessHeadphoneAir2SE.jpg">
+                                <span class="sw-model">小米真无线蓝牙耳机Air2&nbsp;SE</span>
+                                <span class="sw-desc">大尺寸动圈单元&nbsp;|&nbsp;20小时持久续航&nbsp;|&nbsp;双麦克风通话降噪</span>
+                                <span class="sw-price">
+                                    <span class="sw-price-new">129元</span>
+                                    <span class="sw-price-old">169元</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <div>浏览更多</div>
+                                    <div>热门</div>
+                                </div>
+                                <span class="iconfont icon-arrow-right2"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航区 -->
+    <div class="bottom-navs-wrapper">
+        <div class="bottom-navs">
+            <ul class="bottom-nav-shortcuts">
+                <li>
+                    <a href="#">
+                        <i><span class="iconfont icon-editor2"></span></i>
+                        <span>预约维修服务</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <i><span class="iconfont icon-7tiantuihuan"></span></i>
+                        <span>7天无理由退货</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <i><span class="iconfont icon-15tianwuliyoutuihuo"></span></i>
+                        <span>15天免费换货</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <i><span class="iconfont icon-gift"></span></i>
+                        <span>满69元包邮</span>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#">
+                        <i><span class="iconfont icon-location"></span></i>
+                        <span>520余家售后网点</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="bottom-nav-list">
+                <ul class="bottom-nav-links">
+                    <li>
+                        <div class="links-title">帮助中心</div>
+                        <div class="links-content">
+                            <a href="#">账户管理</a>
+                            <a href="#">购物指南</a>
+                            <a href="#">订单操作</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-title">服务支持</div>
+                        <div class="links-content">
+                            <a href="#">售后政策</a>
+                            <a href="#">自助服务</a>
+                            <a href="#">相关下载</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-title">线下门店</div>
+                        <div class="links-content">
+                            <a href="#">小米之家</a>
+                            <a href="#">服务网点</a>
+                            <a href="#">授权体验店/专区</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-title">关于小米</div>
+                        <div class="links-content">
+                            <a href="#">了解小米</a>
+                            <a href="#">加入小米</a>
+                            <a href="#">投资者关系</a>
+                            <a href="#">企业社会责任</a>
+                            <a href="#">廉洁举报</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-title">关注我们</div>
+                        <div class="links-content">
+                            <a href="#">新浪微博</a>
+                            <a href="#">官方微信</a>
+                            <a href="#">联系我们</a>
+                            <a href="#">公益基金会</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="links-title">特色服务</div>
+                        <div class="links-content">
+                            <a href="#">F码通道</a>
+                            <a href="#">礼物码</a>
+                            <a href="#">防伪查询</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="bottom-nav-sep"></div>
+                <div class="official-contacts">
+                    <div class="phone-no-area">
+                        <div class="phone-no">400-100-5678</div>
+                        <div class="phone-no-desc">8:00-18:00（仅收市话费）</div>
+                    </div>
+                    <div class="human-service">
+                        <a href="#">
+                            <span class="iconfont icon-chat"></span>
+                            <span>人工客服</span>
+                        </a>
+                    </div>
+                    <div class="follow-mi-area">
+                        <span class="follow-mi">关注小米：</span>
+                        <a href="#"><span class="iconfont icon-weiboweibo"></span></a>
+                        <a href="#"><span class="iconfont icon-wechat"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

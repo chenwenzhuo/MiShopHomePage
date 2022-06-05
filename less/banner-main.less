@@ -1,0 +1,184 @@
+.banner-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.banner {
+    width: 1226px;
+    margin: 0 auto;
+
+    .main-banner {
+        width: 100%;
+        font-size: 0;
+        // 导航链接m-banner-nav需要绝对定位，故将父容器开启相对定位
+        position: relative;
+
+        .m-banner-nav-wrapper {
+            .m-banner-nav {
+                width: 234px;
+                height: 460px;
+                background-color: rgba(148, 148, 148, .5);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 20px 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 20;
+
+                li {
+                    width: 100%;
+                    height: 42px;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        color: #ffffff;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 20px;
+                        box-sizing: border-box;
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background-color: rgb(250, 122, 58);
+                    }
+                }
+            }
+
+            .m-banner-nav-goodslist {
+                width: 0;
+                height: 460px;
+                background-color: #ffffff;
+                box-sizing: border-box;
+                padding: 20px 0;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                align-content: flex-start;
+                position: absolute;
+                top: 0;
+                left: 234px;
+                z-index: 20;
+                overflow: hidden;
+
+                li {
+                    width: 248px;
+                    height: 69px;
+
+                    a {
+                        width: 248px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 20px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        span {
+                            font-size: 15px;
+                            color: #000000;
+                            margin-left: 20px;
+                        }
+
+                        &:hover span {
+                            color: #ee702e;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 主品推荐区
+        .recomd-goods {
+            position: relative;
+
+            .recomd-gs-img a img {
+                width: 100%;
+            }
+
+            // 切换主图的左右按钮
+            .img-switcher a {
+                display: inline-block;
+
+                span {
+                    display: inline-block;
+                    width: 42px;
+                    height: 69px;
+                    background-image: url("../img/icon-slides.png");
+                    position: absolute;
+                }
+
+                &:nth-child(1) span {
+                    top: 199px;
+                    left: 234px;
+                    background-position-x: -84px;
+
+                    &:hover {
+                        background-position-x: 0;
+                    }
+                }
+
+                &:nth-child(2) span {
+                    top: 199px;
+                    right: 0;
+                    background-position-x: -124px;
+
+                    &:hover {
+                        background-position-x: -42px;
+                    }
+                }
+            }
+
+            // 切换主图的圆点
+            .dots-switcher {
+                height: 12px;
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+
+                a {
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 10px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    span {
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        box-sizing: border-box;
+                        background-color: #3d3d3d;
+                        border: 2px solid #8e8e8e;
+                        border-radius: 50%;
+                        opacity: .5;
+                    }
+
+                    &:first-child span {
+                        background-color: #ffffff;
+                        border: 2px solid #686868;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 左侧导航链接出现时的样式
+.m-banner-nav-goodslist-show {
+    box-shadow: 8px 0 10px #d6d6d6;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+}

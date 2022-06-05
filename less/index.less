@@ -1,0 +1,64 @@
+// 去掉所有超链接的下划线并设置默认颜色
+a {
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+// 引入top bar样式
+@import "top-bar.css";
+
+// 引入导航栏样式
+@import "nav-bar.css";
+
+// 引入banner区样式
+@import "banner-main.css";
+@import "banner-sub.css";
+
+// 引入分类展示-手机区样式
+@import "cell-phone-area.css";
+// 引入分类展示-只能穿戴区样式
+@import "smart-wearing-area.css";
+
+// 引入底部导航区样式
+@import "bottom-navs.css";
+
+// 最新产品栏位  样式简单，直接写在index.less中
+.newest-prod-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 0;
+
+    .newest-prod {
+        width: 1226px;
+        margin: 0 auto;
+
+        a img {
+            width: 1226px;
+        }
+    }
+}
+
+.classified-goods-wrapper {
+    width: 100%;
+
+    .classified-goods {
+        width: 1226px;
+        margin: 0 auto;
+    }
+}
+
+.bottom-navs-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    .bottom-navs {
+        width: 1226px;
+        margin: 0 auto;
+    }
+}
